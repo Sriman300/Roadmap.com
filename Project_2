@@ -1,0 +1,93 @@
+Project 3: Campus Placement Portal Backend
+
+What it is. A backend for managing college placements. There are three types of users: students,
+recruiters (company HR) and the placement officer (admin). Recruiters post jobs with eligibility criteria,
+students apply if eligible, and the admin tracks everything.
+
+Why it impresses. This is your flagship backend project. It shows real database design with many
+related tables, role based access control, business rules, file uploads, testing and Docker. It is also a
+domain you understand personally, so you can explain it confidently and with genuine examples.
+
+Tech stack
+
+Part                      Use       
+
+Framework                 FastAPI
+Database                  PostgreSQL with SQLAlchemy and Alembic
+Auth                      JWT with roles: student, recruiter, admin
+File storage              Resume upload, saved locally first, cloud storage later
+Testing                   pytest, aiming for good coverage of business rules
+Infra                     Docker and Docker Compose for the app and database
+Automation                GitHub Actions to run tests on every push
+
+Must have features
+• Registration and login for all three roles with role based permissions.
+• Student profile with CGPA, branch, skills and resume upload.
+• Recruiters create job drives with minimum CGPA, eligible branches and last date.
+• Students can only apply to drives they are eligible for, and only before the last date.
+• Application status flow: applied, shortlisted, interview, selected, rejected.
+• Admin dashboard endpoints: number of students placed, company wise offers, highest and average
+package.
+Extra features once the basics work
+• Email notification when an application status changes, using background tasks.
+• Search and filter jobs by company, role and package.
+• Rate limiting on login to prevent misuse.
+• A small React or Streamlit frontend for the student side.
+
+Folder structure
+
+placement_portal/
+ app/
+ main.py
+ core/
+Placement Roadmap for MCA Students 17
+ config.py
+ security.py
+ db/
+ session.py
+ base.py
+ models/
+ user.py
+ student.py
+ company.py
+ job.py
+ application.py
+ schemas/
+ routers/
+ auth.py
+ students.py
+ recruiters.py
+ jobs.py
+ admin.py
+ services/
+ eligibility.py
+ alembic/
+ tests/
+ Dockerfile
+ compose.yaml
+ .github/workflows/tests.yml
+ README.md
+How to build it, step by step
+1 Draw the ER diagram first: users, students, companies, jobs, applications. Put this diagram in the
+README.
+2 Write the business rules as plain sentences before coding, for example: a student cannot apply twice
+to the same job.
+3 Build auth and roles first, since every other feature depends on it.
+4 Build features one router at a time, testing each in /docs before moving on.
+5 Keep business logic such as eligibility checks in a services folder, not inside routes. This is a sign of
+clean architecture.
+6 Write tests especially for the rules: ineligible student applying, applying after deadline, applying
+twice.
+7 Add Docker and Docker Compose so the whole thing runs with one command.
+8 Add the GitHub Actions workflow, then deploy and write a detailed README.
+Deployment
+Deploy the container on Render or Railway with a hosted PostgreSQL database. In the README,
+include the live API docs link plus a test account for each role so the reviewer can try it immediately.
+
+Questions this project prepares you for
+
+• Explain your database design. Why did you create a separate applications table?
+• How does role based access control work in your code?
+• How do you prevent a student from applying twice? Database constraint or code check, and why?
+• Why did you use Docker? What problem does it solve?
+• How would this system handle 10,000 students applying in the same hour?
