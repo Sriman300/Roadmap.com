@@ -1,0 +1,20 @@
+Step 6: Core computer science subjects (from month 5)
+
+Service companies (TCS, Infosys, Wipro, Cognizant, Accenture, Capgemini and similar) ask these a lot,
+and product companies ask them too. Revise with an interview mindset, not an exam mindset.
+Subject Most asked topics Where to learn
+OOP - Four pillars, method overloading vs overriding, abstract
+classes, interfaces, real life examples
+-> GeeksforGeeks, your own Python practice
+DBMS - Keys, normalization, ACID, transactions, indexing, joins,
+ER diagrams
+-> Gate Smashers on YouTube,GeeksforGeeks
+Operating Systems- Process vs thread, scheduling, deadlock, paging, virtual
+memory, semaphores
+ ->Gate Smashers or Neso Academy on YouTube
+Computer Networks-OSI and TCP/IP models, HTTP and HTTPS, DNS, what
+happens when you type a URL, TCP vs UDP
+-> Neso Academy, GeeksforGeeks
+
+->Keep one Google Doc or Markdown file per subject with your own short notes. Revise those notes in the
+month before placements instead of rewatching full playlists.
