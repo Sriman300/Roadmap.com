@@ -1,0 +1,22 @@
+# Choose your direction
+
+Without a clear target role you will keep learning random things. Here are the three roles that fit your current skills.
+
+| Role | Core skills needed | Who hires freshers | Fit for you |
+| :--- | :--- | :--- | :--- |
+| Python Backend Developer | Python, FastAPI or Django, SQL, PostgreSQL, REST APIs, Git, Docker basics, testing | Startups, product companies, service companies | Best fit. You are already on this path. |
+| Data Analyst | SQL (very strong), Excel, Power BI or Tableau, Pandas, statistics, storytelling | Service companies, analytics firms, banks, startups | Strong backup. You already have half the skills. |
+| AI or ML Engineer (fresher) | Python, ML basics, Scikit Learn, LLM APIs, RAG, FastAPI to serve models | Fewer fresher openings, mostly startups | Add as a specialisation on top of backend, not as the only plan. |
+
+# The big picture timeline
+
+MCA is two years. In most colleges, campus placement drives begin in the third semester, which means you realistically have around eight to ten months before companies start visiting. Check with your placement cell for your college's exact schedule and adjust the plan below.
+
+| Phase | When | Focus | What you should have at the end |
+| :--- | :--- | :--- | :--- |
+| Phase 1: Foundation | November to January | Git and GitHub, core Python, DSA basics, SQL basics, finish FastAPI fundamentals | GitHub profile live, 60 DSA problems, 30 SQL problems, small FastAPI app |
+| Phase 2: Build | February to April | Project 1 and Project 2, PostgreSQL, authentication, DSA medium level | Two projects on GitHub with good READMEs, one deployed, 140 DSA problems |
+| Phase 3: Level up | May to July | Project 3 and Project 4, Docker, testing, internship applications, core CS subjects | Four projects, an internship or freelance work if possible, 200 DSA problems |
+| Phase 4: Placement ready | August onwards | Capstone AI project, aptitude, mock interviews, resume, applying everywhere | Five projects, 250 plus problems, a sharp one page resume, interview confidence |
+
+Your semester exams will interrupt this plan. That is normal. During exam weeks, keep only one thing alive: solve one DSA problem a day and push it to GitHub. Do not let the chain break completely.
