@@ -1,0 +1,71 @@
+Project 2: Sales Insights Dashboard
+
+What it is. An interactive dashboard built on a real public dataset, for example a retail or online
+shopping sales dataset from Kaggle. It answers real business questions: which products and regions sell
+most, how sales change by month, who the best customers are, and what should the business do next.
+Why it impresses. It turns your existing Pandas, Matplotlib and Seaborn knowledge into something a
+recruiter can actually open and use. It also directly supports your Data Analyst backup path. The
+difference between a beginner and a strong candidate here is the written insights, not the number of
+charts.
+
+Tech stack
+       
+Part                             Use
+
+Data                             A public sales dataset from Kaggle (kaggle.com/datasets)
+Analysis                         Pandas and NumPy, in a Jupyter notebook first
+Charts                           Matplotlib and Seaborn in the notebook, Plotly for interactive charts in the app
+App                              Streamlit (streamlit.io)
+Storage                          CSV at first, then load the cleaned data into PostgreSQL and query it with SQL
+
+Must have features
+• A cleaning notebook that documents every step: missing values, duplicates, wrong data types,
+outliers.
+• KPI cards: total revenue, total orders, average order value, number of customers.
+• Monthly trend, top ten products, sales by region and category.
+• Filters by date range, region and category.
+• A written insights section with five to seven findings and a recommendation for each.
+
+Extra features once the basics work
+• Customer segmentation using RFM analysis (recency, frequency, monetary).
+• A simple sales forecast for the next three months.
+• Rebuild the same dashboard in Power BI and compare. Useful if you lean towards the analyst role.
+
+Folder structure
+sales_insights_dashboard/
+ data/
+ raw/
+ cleaned/
+ notebooks/
+ 01_cleaning.ipynb
+ 02_analysis.ipynb
+ app/
+streamlit_app.py
+charts.py
+ queries.sql
+ images/
+ requirements.txt
+ README.md
+
+How to build it, step by step
+
+1 Pick a dataset with at least several thousand rows and dates in it. Read its description fully.
+2 Write five business questions before you touch the data. The questions guide the whole project.
+3 Clean the data in notebook 01 and save the cleaned file. Explain each decision in markdown cells.
+4 Answer your questions in notebook 02, with one chart per question and a written conclusion under
+each chart.
+5 Load the cleaned data into PostgreSQL and rewrite at least five of your answers as SQL queries.
+Save them in queries.sql.
+6 Build the Streamlit app with KPI cards, filters and the main charts.
+7 Write the insights and recommendations section in the README in simple business language.
+
+Deployment
+
+Streamlit Community Cloud lets you deploy directly from your GitHub repo. Keep the dataset small
+enough for the free tier, or use a sample.
+
+Questions this project prepares you for
+• Walk me through how you cleaned this data. Why did you handle missing values that way?
+• What was your most surprising finding?
+• If the business had money for only one action, what would you recommend and why?
+• Write the SQL for the top three products in each region (window functions).
