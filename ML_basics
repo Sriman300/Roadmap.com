@@ -1,0 +1,12 @@
+Step 7: Machine learning basics (from month 6, optional but recommended)
+
+Since you already know Pandas and visualisation, adding basic ML is a short step and supports both your
+backup role and your AI project. Learn: train and test split, linear and logistic regression, decision trees,
+random forest, KMeans clustering, evaluation metrics (accuracy, precision, recall, F1, confusion matrix),
+and overfitting. Use the Scikit Learn library.
+
+• Learn: Kaggle Learn courses (kaggle.com/learn), free and hands on. The Scikit Learn official user
+guide for reference.
+• Practise: Kaggle datasets and beginner competitions such as Titanic.
+• Then: learn how LLM based apps work: embeddings, vector search, and RAG. Hugging Face
+(huggingface.co) has free courses and models.
