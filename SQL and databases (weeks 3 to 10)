@@ -1,0 +1,16 @@
+SQL is asked in nearly every interview, and for backend and data roles it is absolutely essential. Learn it
+with PostgreSQL, because that is what you will use with FastAPI.
+
+Topics: SELECT, WHERE, ORDER BY, LIMIT, aggregate functions, GROUP BY and HAVING, all
+types of JOINs, subqueries, CTEs (WITH clause), window functions (ROW_NUMBER, RANK, LAG,
+LEAD), CASE WHEN, constraints and keys, indexes, normalization up to 3NF, transactions and ACID
+properties.
+
+• Learn: SQLBolt (sqlbolt.com) for the basics in a day or two, then PostgreSQL Tutorial
+(postgresqltutorial.com).
+• Practise: the LeetCode SQL 50 study plan on leetcode.com, HackerRank SQL track, and SQLZoo
+(sqlzoo.net).
+• GitHub: repo named sql_practice with one .sql file per topic, plus a small database design of your
+own (for example a college library) with a diagram in the README.
+• Done when: you can find the second highest salary in each department, explain the difference
+between WHERE and HAVING, and design tables for a simple app without help.
