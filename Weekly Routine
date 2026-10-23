@@ -1,0 +1,48 @@
+# 8. A realistic weekly routine
+
+This assumes college takes most of your day and you have around three hours in the evening plus more time on weekends. Adjust the timings to your life, but keep the structure.
+
+| Day | Hour 1 | Hour 2 | Hour 3 |
+| :--- | :--- | :--- | :--- |
+| Monday | DSA: new topic, 2 problems | FastAPI or current project | Push to GitHub, write notes |
+| Tuesday | DSA: 2 problems | SQL practice: 5 problems | Current project |
+| Wednesday | DSA: 2 problems | Current project | Core CS subject (one topic) |
+| Thursday | DSA: revise old problems | SQL or Python core topic | Current project |
+| Friday | DSA: 2 problems | Current project | Aptitude (later phases) or reading docs |
+| Saturday | LeetCode contest or mock test | Long project session (3 hours) | Write README, LinkedIn post if something is finished |
+| Sunday | Weekly review (30 minutes) | Light revision or rest | Plan next week |
+
+### Weekly review questions
+* What did I complete this week? Is it on GitHub?
+* What did I plan but not do, and what was the real reason?
+* How many DSA problems did I solve, and how many could I solve again without help?
+* What is the single most important thing for next week?
+
+*Rest one evening a week. Burnout in month four will cost you more than one evening off every week.*
+
+# 9. Interview preparation
+## How to explain any project
+
+Interviewers spend most of the time on your projects. Prepare every project using this five part structure, and practise saying it out loud in about two minutes:
+
+1. **What:** what the project does in one or two sentences.
+2. **Why:** the problem it solves and why you chose to build it.
+3. **How:** the architecture, the stack, and how data flows through it.
+4. **Trade offs:** decisions you made and what you gave up. For example, why PostgreSQL instead of MongoDB.
+5. **Challenge:** one real bug or difficulty you faced and how you solved it.
+
+## How to handle the coding round
+
+1. Understand the problem fully. Repeat it in your own words and ask about edge cases.
+2. Think aloud. Explain the simple brute force idea first, then improve it.
+3. Write clean code with meaningful variable names.
+4. Test your code by walking through an example, including an edge case such as an empty list.
+5. State the time and space complexity without being asked.
+
+## HR round
+
+Prepare honest answers for: tell me about yourself, why this company, your strengths and weaknesses, a time you failed, where you see yourself in three years, and why MCA. Write them down once, then practise speaking them naturally rather than memorising word for word.
+
+## Practise with people
+
+Do mock interviews with classmates every week in Phase 4. One person asks, one answers, then switch. Ask seniors who got placed to take one mock interview for you. It is uncomfortable, and that discomfort is exactly what you want to get used to before the real day.
