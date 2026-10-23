@@ -1,0 +1,24 @@
+ Data Structures and Algorithms (start now, continue till placement)
+
+   Follow this order. Do not jump around.
+1 Time and space complexity (Big O). Learn this first, otherwise you cannot judge your own solutions.
+2 Arrays and strings, including two pointers and sliding window.
+3 Hashing using dictionaries and sets.
+4 Sorting and binary search.
+5 Recursion and backtracking basics.
+6 Stacks and queues.
+7 Linked lists.
+8 Trees and binary search trees.
+9 Heaps (Python's heapq).
+10 Graphs: BFS, DFS, and basic shortest path.
+11 Dynamic programming basics: start with 1D problems.
+         
+• Learn: Striver's A2Z DSA course and sheet (takeuforward.org), NeetCode roadmap and videos
+(neetcode.io), GeeksforGeeks articles (geeksforgeeks.org).
+• Practise: LeetCode (leetcode.com) as the main platform. Use GeeksforGeeks practice and CodeChef
+(codechef.com) if you want extra easy problems or contests.
+• Target: 250 to 300 well understood problems by placement time. Roughly 40 percent easy, 50
+percent medium, 10 percent hard. Quality matters more than count.
+• GitHub: repo named dsa_in_python, organised by topic folders. Each solution file should have the
+problem link, your approach in two or three lines, and the time and space complexity as comments.
+• Daily rule: minimum one problem every day. On weekends, attempt a LeetCode contest even if you solve only one question.
