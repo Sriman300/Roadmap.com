@@ -1,0 +1,65 @@
+Project 4: Loan Approval Predictor with API
+
+What it is. A machine learning model that predicts whether a loan application is likely to be approved,
+based on income, credit history, loan amount and similar fields. The trained model is served through a
+FastAPI endpoint, and a small Streamlit page lets anyone enter details and see the prediction.
+Why it impresses. Plenty of students train models in notebooks. Very few can put a model behind an
+API with input validation and deploy it. This project joins your data skills with your backend skills,
+which is exactly the profile AI focused startups look for.
+
+Tech stack
+
+Part                                   Use
+Data                                   A public loan prediction dataset from Kaggle
+ML                                     Pandas and Scikit Learn (logistic regression, random forest)
+Model saving                           joblib
+API                                    FastAPI with Pydantic input validation
+Interface                              Streamlit calling your API
+Tracking                               Store every prediction request in a database table for later review
+
+Must have features
+• A notebook with exploration, cleaning, feature engineering, and comparison of at least two models.
+• Clear evaluation: confusion matrix, precision, recall, F1, and an explanation of which metric matters
+most here and why.
+• A /predict endpoint that validates input and returns the prediction with a probability.
+• A /health endpoint and a /model_info endpoint showing model version and training date.
+• A Streamlit form that calls the API.
+Extra features once the basics work
+• Explain each prediction using feature importance.
+• Log every request and response for monitoring.
+• A retraining script that saves a new model version.
+
+Folder structure
+
+loan_predictor/
+ notebooks/
+ eda_and_training.ipynb
+ml/
+ train.py
+ model_v1.joblib
+ api/
+ main.py
+ schemas.py
+ predictor.py
+ ui/
+ streamlit_app.py
+ tests/
+ requirements.txt
+
+ README.md
+
+How to build it, step by step
+1 Explore the data and note class imbalance, missing values and important features.
+2 Train a simple baseline first, then a better model. Record the scores of both in a table.
+3 Move the training code from the notebook into train.py so it can be run again cleanly.
+4 Build the FastAPI service that loads the saved model once at startup and serves predictions.
+5 Add strict Pydantic validation so wrong input types return a clean error.
+6 Build the Streamlit form, write tests for the API, deploy, and document.
+Deployment
+Deploy the API on Render or Railway and the Streamlit interface on Streamlit Community Cloud,
+pointing it to your API URL.
+Questions this project prepares you for
+• Why did you choose this model over the others?
+• Why is accuracy alone misleading for this dataset?
+• What is overfitting and how did you check for it?
+• How would you update the model when new data arrives?
