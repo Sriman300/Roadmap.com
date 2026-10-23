@@ -1,0 +1,45 @@
+5. The GitHub practice system
+
+Every single thing you practise goes on GitHub. Not because a green contribution graph impresses
+anyone by itself, but because it forces you to finish things, write clearly about them, and build a public
+record that a recruiter can open in thirty seconds.
+
+Repository name                                                  What goes inside
+
+your_username (profile README)                                   A short introduction, your target role, tech stack, current focus, and links to
+                                                                 your best projects and LinkedIn.
+
+python_core_practice                                             Folders by topic: oop, exceptions, file_handling, decorators and so on, each
+                                                                 with code and notes.md
+
+dsa_in_python                                                    Folders by topic: arrays, strings, hashing, trees, graphs, dp. One file per
+                                                                 problem with link, approach and complexity.
+
+sql_practice                                                     One .sql file per topic plus your own database design project.
+
+fastapi_learning                                                 Small numbered folders, one concept each, built while following the docs.
+
+Project repositories                                             One separate repo for each of the five projects in Section 6, each with a proper
+                                                                 README.
+
+Use underscores in repository names, keep them lowercase, and keep names meaningful. A name like
+test123 or my_project_final tells the reader nothing
+
+
+Rules that make your GitHub look professional
+
+1 Commit every day you study, even if it is one DSA solution. Never create fake commits or copy
+someone else's repository. Interviewers do ask you to explain your code line by line.
+2 Write clear commit messages that describe what changed, for example: "Add JWT login endpoint",
+"Fix total calculation for monthly report", "Write tests for expense routes". Avoid messages like
+"update" or "final".
+3 Never push passwords, API keys or .env files. Add them to .gitignore and share a .env.example file
+with empty values instead.
+4 Every project repo must have a README with: project title and one line description, a screenshot or
+GIF, the live link, features, tech stack, how to run it locally, API endpoint list, what you learned, and
+future improvements.
+5 Pin your best four to six repositories on your profile, with your strongest project first.
+6 Once you are comfortable, use branches for new features and merge through pull requests, even
+when working alone. It shows you understand real team workflow.
+7 In Phase 3, add GitHub Actions to run your tests automatically on every push. It is a small effort and
+very few freshers do it
