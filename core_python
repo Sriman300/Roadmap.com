@@ -1,0 +1,17 @@
+## core Python (weeks 1 to 4)
+     
+Cover these topics properly: data types and their methods, list and dictionary comprehensions, functions
+and arguments, OOP (classes, inheritance, polymorphism, encapsulation, dunder methods), exception
+handling, file handling, modules and packages, virtual environments, decorators, generators, iterators,
+and type hints. Type hints matter a lot because FastAPI is built on them.
+
+    
+• Learn: CS50P, Harvard's free Python course (cs50.harvard.edu/python), Real Python articles
+(realpython.com), the official tutorial (docs.python.org).
+• Practise: HackerRank Python track (hackerrank.com), and Python Tutor (pythontutor.com)
+whenever you cannot picture what your code is doing.
+• GitHub: repo named python_core_practice with one folder per topic. Every topic gets small
+programs plus a short notes.md in your own words.
+• Done when: you can write a small class based program, for example a library management system in
+the terminal, without copying code.
+
