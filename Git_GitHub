@@ -1,0 +1,11 @@
+Step 1: Git and GitHub (week 1)
+
+Do this first because every other step will be saved on GitHub. Learn the commands you will use daily:
+init, clone, add, commit, push, pull, branch, merge, and how to write a .gitignore file. Understand what a
+pull request is.
+• Learn: GitHub Skills (skills.github.com) for guided practice, and Learn Git Branching
+(learngitbranching.js.org) to visually understand branches.
+• Practise: create your GitHub account with a professional username (your real name works best), add
+a photo and bio, and create your profile README.
+• Done when: you can create a repo, push code from your laptop, make a branch, merge it, and fix a
+simple merge conflict without searching every step.
