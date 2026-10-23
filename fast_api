@@ -1,0 +1,24 @@
+Step 5: FastAPI, done properly (weeks 4 to 16)
+Most students stop at making a few endpoints that return JSON. To be job ready you must go further.
+
+Learn it in this order:
+
+1 Path and query parameters, request body, response models.
+2 Pydantic models and validation in depth.
+3 Routers and project structure (do not keep everything in main.py).
+4 Connecting to a database using SQLAlchemy, first SQLite and then PostgreSQL.
+5 Database migrations with Alembic.
+6 Dependency injection (the Depends system), one of FastAPI's best features.
+7 Authentication with password hashing and JWT tokens, then role based authorization.
+8 Error handling, status codes, and logging.
+9 Background tasks and file uploads.
+10 Testing with pytest and FastAPI's TestClient.
+11 Environment variables and settings management, never hard coding secrets.
+12 Docker, so your app runs the same everywhere, then deployment.
+
+• Learn: the official FastAPI tutorial (fastapi.tiangolo.com) is excellent, read it fully. Also the
+SQLAlchemy docs (docs.sqlalchemy.org), Pydantic docs (docs.pydantic.dev), pytest docs
+(docs.pytest.org), and Docker's getting started guide (docs.docker.com).
+• Tools: Postman (postman.com) or the built in /docs page FastAPI gives you for testing APIs.
+• GitHub: repo named fastapi_learning where each concept is a small numbered folder. Your real
+projects get their own separate repos.
