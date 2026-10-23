@@ -1,0 +1,87 @@
+Project 5: Ask Your Notes: AI Document Q&A (Capstone)
+
+What it is. An app where a user uploads PDFs, for example their semester notes or a company policy
+document, and asks questions in plain language. The app finds the most relevant parts of the documents
+and uses a large language model to answer, showing which page each answer came from.
+Why it impresses. This is the kind of AI feature companies are actually building in 2026. It proves you
+understand more than prompting: chunking text, embeddings, vector search, retrieval, cost and failure
+cases. Combined with your backend projects, it makes your profile stand out strongly.
+
+Tech stack
+
+Tech                            stack
+Backend                         FastAPI
+PDF reading                     pypdf
+Embeddings                      An open source model through the sentence_transformers library, or an embeddings
+                                API
+Vector store                    ChromaDB or FAISS while learning, pgvector inside PostgreSQL later
+LLM                             An LLM API with a free developer tier, for example Google's Gemini API or Groq.
+                                Check current free limits before you start.
+Interface                       Streamlit at first
+Database                        PostgreSQL for users, documents and chat history
+
+Must have features
+• Upload one or more PDFs, extract text, split it into chunks with page numbers.
+• Create embeddings for each chunk and store them in the vector database.
+• For each question, retrieve the top matching chunks and send them with the question to the LLM.
+• Show the answer with sources (document name and page number).
+• If the answer is not in the documents, the app must clearly say so instead of making something up.
+• Save chat history per user.
+Extra features once the basics work
+• A small evaluation set: twenty questions with known answers, and a score for how many your app
+gets right.
+• Track response time and approximate cost per question.
+• Streaming responses so the answer appears word by word.
+• Support for Word files and web pages.
+Folder structure
+ask_your_notes/
+ app/
+ main.py
+ config.py
+routers/
+ documents.py
+ chat.py
+ services/
+ pdf_loader.py
+ chunker.py
+ embeddings.py
+ vector_store.py
+ llm.py
+ rag_pipeline.py
+ eval/
+ questions.json
+ run_eval.py
+ ui/
+ streamlit_app.py
+tests/
+ Dockerfile
+ .env.example
+ README.md
+How to build it, step by step
+1 First learn the idea: what embeddings are and why we search by meaning instead of keywords.
+Hugging Face's free course and blog are good places.
+2 Build the pipeline in a plain Python script first, with one PDF, before adding any API.
+3 Experiment with chunk size and overlap and note how answers change. Write these findings in the
+README, interviewers love this.
+4 Wrap the pipeline in FastAPI endpoints for upload and chat.
+5 Write a strict prompt that tells the model to answer only from the given context and to say when the
+answer is not present.
+6 Build the evaluation script and record your scores before and after each improvement.
+7 Store the API key only in environment variables. Never commit it.
+8 Dockerise, deploy, record a two minute demo video, and post it on LinkedIn.
+Deployment
+Deploy the backend with Docker on Render or Railway and the interface on Streamlit Community
+Cloud. Keep usage limits in mind so your free API quota is not exhausted by strangers; adding a simple
+login solves this.
+Questions this project prepares you for
+• What is RAG and why not just send the whole PDF to the model?
+• What is an embedding? What is a vector database?
+• How did you reduce hallucination in your app?
+• How did you choose chunk size? What happened when it was too big or too small?
+• How did you measure whether your app gives correct answers?
+• What would it cost to run this for 1,000 users a day, and how would you reduce that cost?
+
+
+
+
+
