@@ -1,0 +1,78 @@
+Project 1: Personal Expense Tracker API
+
+What it is. A backend where users sign up, log in, and record their daily expenses with category,
+amount, date and note. They can then see monthly totals and spending by category.
+Why it impresses. It covers the exact basics every backend interview checks: REST design, CRUD,
+database relations, authentication, and validation. It is simple enough to finish in three to four weeks,
+which builds your confidence for bigger projects.
+
+Tech stack
+
+Part                                 Use
+
+Language                             Python
+Framework                            FastAPI
+Database                             SQLite while learning, then PostgreSQL
+ORM and migrations                   SQLAlchemy and Alembic
+Validation                           Pydantic
+Auth                                 Password hashing (passlib or bcrypt) and JWT tokens
+Testing                              pytest with FastAPI TestClient
+
+Must have features
+• User registration and login with hashed passwords and JWT.
+Placement Roadmap for MCA Students 13
+• Create, read, update and delete expenses. Each user sees only their own data.
+• Categories such as food, travel, rent, shopping.
+• Filter expenses by date range and category.
+• Summary endpoint: total spent this month and amount per category.
+• Proper error messages and status codes (404 when not found, 401 when not logged in).
+Extra features once the basics work
+• Monthly budget per category with a warning when crossed.
+• Export expenses as a CSV file.
+• Pagination for the expense list.
+• A simple frontend later, even a basic HTML page or Streamlit app calling your API
+
+Folder structure
+expense_tracker_api/
+ app/
+ main.py
+ config.py
+ database.py
+ models.py
+ schemas.py
+ auth.py
+ routers/
+ users.py
+ expenses.py
+ alembic/
+ tests/
+ test_users.py
+ test_expenses.py
+ requirements.txt
+ .env.example
+ .gitignore
+ README.md
+How to build it, step by step
+1 Write down all the endpoints on paper first, with method, path and what each returns.
+2 Design two tables, users and expenses, with a foreign key from expenses to users.
+3 Set up the project, virtual environment, and the folder structure above. Push this skeleton to GitHub
+on day one.
+4 Build the expense CRUD without login first, test everything in the /docs page.
+5 Add registration and login, then protect the expense routes so each user only sees their own records.
+6 Add filters and the summary endpoint. This is where your SQL GROUP BY knowledge gets used.
+7 Write tests for the main routes. Aim for at least ten meaningful tests.
+8 Move from SQLite to PostgreSQL and add Alembic migrations.
+9 Write the README with endpoint list and screenshots, then deploy.
+
+Deployment
+
+Deploy the API on Render (render.com) or Railway (railway.com) and use a free PostgreSQL database
+from a provider such as Supabase (supabase.com) or Neon. Free plans and their limits  change often, so
+check the current terms before you choose. Put the live /docs link in your README.
+Questions this project prepares you for
+• What is REST and what makes an API RESTful?
+• How does JWT authentication work, and where is the token stored?
+• Why should passwords be hashed and not encrypted?
+• What is the difference between PUT and PATCH?
+• How did you make sure one user cannot see another user's data?
+
