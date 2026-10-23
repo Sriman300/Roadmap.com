@@ -1,0 +1,80 @@
+# 7. All the websites in one place
+
+You do not need every resource here. Pick one main resource for each area and finish it. Switching between five courses for the same topic is one of the most common ways students waste months.
+
+## Python
+
+| Website | Address | Use it for |
+| :--- | :--- | :--- |
+| CS50P (Harvard) | cs50.harvard.edu/python | Free, structured Python course with problem sets |
+| Python official docs | docs.python.org | Reference and the official tutorial |
+| Real Python | realpython.com | Clear articles on any Python topic |
+| Python Tutor | pythontutor.com | Visualising how your code runs step by step |
+| HackerRank | hackerrank.com | Python and SQL practice tracks, certificates |
+
+## DSA and coding practice
+
+| Website | Address | Use it for |
+| :--- | :--- | :--- |
+| LeetCode | leetcode.com | Main DSA practice, contests, SQL 50 study plan |
+| take U forward (Striver) | takeuforward.org | A2Z DSA sheet and video explanations |
+| NeetCode | neetcode.io | Topic wise roadmap and very clear video solutions |
+| GeeksforGeeks | geeksforgeeks.org | Concept articles, company wise questions, core CS |
+| CodeChef | codechef.com | Beginner friendly contests |
+
+
+## SQL and databases
+
+| Website | Address | Use it for |
+| :--- | :--- | :--- |
+| SQLBolt | sqlbolt.com | Learning SQL basics interactively |
+| PostgreSQL Tutorial | postgresqltutorial.com | PostgreSQL specific concepts and examples |
+| SQLZoo | sqlzoo.net | Extra practice problems |
+
+## Backend and FastAPI
+
+| Website | Address | Use it for |
+| :--- | :--- | :--- |
+| FastAPI docs | ://tiangolo.com | The main learning resource, read the full tutorial |
+| Pydantic docs | docs.pydantic.dev | Validation and settings |
+| SQLAlchemy docs | docs.sqlalchemy.org | ORM and database work |
+| pytest docs | docs.pytest.org | Writing tests |
+| Docker docs | ://docker.com | Getting started guide for containers |
+| Postman | postman.com | Testing and documenting APIs |
+
+## Git and GitHub
+
+| Website | Address | Use it for |
+| :--- | :--- | :--- |
+| GitHub Skills | ://github.com | Interactive GitHub courses |
+| Learn Git Branching | learngitbranching.js.org | Visual practice for branching and merging |
+| GitHub Docs | ://github.com | GitHub Actions and profile README help |
+
+## Data, ML and AI
+
+| Website | Address | Use it for |
+| :--- | :--- | :--- |
+| Kaggle | kaggle.com | Datasets, free Learn courses, beginner competitions |
+| Hugging Face | huggingface.co | Models, embeddings, free LLM and NLP courses |
+| Streamlit | streamlit.io | Building and hosting data apps |
+
+## Deployment (check current free plans)
+
+| Website | Address | Use it for |
+| :--- | :--- | :--- |
+| Render | render.com | Hosting FastAPI apps and Docker containers |
+| Railway | railway.com | Alternative app hosting |
+| Supabase | supabase.com | Hosted PostgreSQL database |
+| Streamlit Community Cloud | streamlit.io | Free hosting for Streamlit apps |
+
+## Aptitude, core subjects and jobs
+
+| Website | Address | Use it for |
+| :--- | :--- | :--- |
+| IndiaBix | indiabix.com | Aptitude and reasoning practice |
+| PrepInsta | prepinsta.com | Company specific test patterns |
+| Gate Smashers, Neso Academy | YouTube | DBMS, OS and Computer Networks |
+| Overleaf | overleaf.com | Clean resume templates |
+| Internshala | internshala.com | Internships |
+| Unstop | unstop.com | Hackathons, competitions, fresher hiring |
+| Naukri, LinkedIn, Wellfound, Instahyre | naukri.com, linkedin.com, wellfound.com, instahyre.com | Job and internship applications |
