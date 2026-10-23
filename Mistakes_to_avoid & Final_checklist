@@ -1,0 +1,41 @@
+10. Mistakes I see students make again and again
+
+• Tutorial loop. Watching course after course without building. Rule: for every hour of video, spend at
+least two hours writing your own code.
+• Learning too many things. Django, Flask, FastAPI, React, Java and Flutter at the same time. Stick
+to the stack in this guide until you are placed.
+• Copying projects. Cloning a project from YouTube and putting it on your resume. Interviewers can
+tell within three questions.
+• Leaving DSA for later. DSA cannot be crammed in the last month. Start today, even with one easy
+problem.
+• Ignoring aptitude. Strong coders get filtered out in the first online test. Do not let that be you.
+• Unfinished projects. Three finished and deployed projects beat eight unfinished ones every time.
+• Comparing with others. Someone will always seem ahead. Compare yourself only with who you
+were last month.
+• Relying on AI to write your code. Use AI tools to understand concepts and debug, but write the
+code yourself. If you cannot explain a line, you do not own it yet
+
+11. Final checklist before placement season
+
+Go through this list about one month before drives begin. Every item should honestly be a yes.
+
+| Area | Ready when |
+| :--- | :--- |
+| DSA | 250 or more problems solved, and you can solve a medium level problem in about 30 minutes |
+| SQL | Comfortable with joins, GROUP BY, subqueries and window functions |
+| Python | Can explain OOP concepts with your own code examples |
+| FastAPI | Can build a CRUD API with database and JWT authentication from scratch without a tutorial |
+| Projects | At least four complete projects, at least three deployed, all with proper READMEs |
+| GitHub | Profile README done, best repos pinned, consistent activity over months |
+| Core CS | Short notes for OOP, DBMS, OS and CN revised at least twice |
+| Aptitude | Scoring well and consistently on PrepInsta or IndiaBix mock tests |
+| Resume | One page, reviewed by a senior or teacher, every line backed by real work |
+| LinkedIn | Complete profile, a few posts about your projects |
+| Interviews | At least five mock interviews done, project explanations practised out loud |
+
+A last word
+Placement is not a single exam that you pass or fail. It is the result of many small days of work added
+together. If you follow this guide even seventy percent of the way, you will be ahead of most students in
+your batch. Start today with something small: create your GitHub account, push your first file, and solve
+one easy problem. Then do it again tomorrow.
+All the best. Keep building.
