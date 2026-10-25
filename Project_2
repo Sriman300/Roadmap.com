@@ -69,3 +69,39 @@ Questions this project prepares you for
 • What was your most surprising finding?
 • If the business had money for only one action, what would you recommend and why?
 • Write the SQL for the top three products in each region (window functions).
+
+Requirements Details
+
+ Sales Insights Dashboard, you need to shift your focus from simply writing code to thinking like a data-driven business consultant. Recruiters look at this project to see if you can translate raw messy numbers into actionable revenue-generating strategies.
+Because this project spans across both exploratory data science and relational database querying, your preparation must focus on advanced analytical methods, professional visualization techniques, and intermediate SQL.
+
+1. Data Cleaning & Statistical Integrity (Pandas & NumPy)
+
+Data cleaning is the most critical conversation you will have in a technical interview. You need to know how to fix bad data without introducing statistical bias.
+• Outlier Profiling: Learn how to use the Interquartile Range (IQR) method or Z-scores to isolate transaction outliers (e.g., separating an actual wholesale corporate order from a data entry typo).
+• Missing Value Strategies: Learn when to drop rows versus when to impute values (filling fields using median/mode group mapping), and how to document this process clearly in markdown text.
+• Vectorized Data Transformation: Master casting string text to true datetime objects (pd.to_datetime) and creating conditional columns efficiently using np.select or np.where.
+
+2. Intermediate SQL & Window Functions (PostgreSQL)
+
+A major milestone of this project is moving your calculations from Python dataframes into a SQL database. Recruiters will test your raw query skills.
+• SQL Window Functions: Master using ROW_NUMBER(), RANK(), and DENSE_RANK() paired with OVER (PARTITION BY region ORDER BY revenue DESC) to find top-performing items dynamically across different zones.
+• Advanced Aggregations: Learn how to write complex queries utilizing CASE WHEN clauses to pivot text data, alongside structural grouping operators (GROUP BY, HAVING).
+• Common Table Expressions (CTEs): Learn how to structure long, complicated analytical queries using WITH statements so they are readable and optimized.
+
+3. Business Analytics & Frameworks
+
+The differentiator between a basic student dashboard and an advanced portfolio piece is the sophistication of the business analysis.
+• RFM Segmentation Matrix: Understand the mathematical logic behind Recency, Frequency, and Monetary analysis to bin customers into explicit action tiers (e.g., "Champions," "At Risk," "Hibernating").
+• Translating Metrics to Decisions: Learn what executive-level KPIs mean conceptually—such as how Average Order Value (AOV) changes relative to Order Volume, and how to write clear business recommendations.
+
+4. Interactive UI Engineering (Streamlit & Plotly)
+
+You need to build a web application that remains fast and interactive even when sorting through thousands of sales transactions.
+• State & Filter Management: Learn how to use Streamlit control flow widgets (st.sidebar.selectbox, st.date_input) to dynamically slice and filter a global Pandas dataframe object.
+• Interactive Charting Engines: Learn how to configure Plotly Express charts (px.line, px.bar) to build tooltips and hover effects, replacing static images with dynamic visual fields.
+
+• Walk me through how you cleaned this data. Why did you handle missing values that way?
+• What was your most surprising finding?
+• If the business had money for only one action, what would you recommend and why?
+• Write the SQL for the top three products in each region (window functions).
