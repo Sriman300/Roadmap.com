@@ -87,6 +87,37 @@ include the live API docs link plus a test account for each role so the reviewer
 Questions this project prepares you for
 
 • Explain your database design. Why did you create a separate applications table?
+
+Requirement Details
+
+1. Advanced Database Design & Integrity (PostgreSQL + SQLAlchemy)
+
+A placement portal lives or dies by its data integrity. If a database allows an ineligible student to apply, the system fails.
+• Complex Entity-Relationship (ER) Modeling: Learn how to map out relational structures: One-to-One mappings (a User is a Student), One-to-Many mappings (a Company posts many Jobs), and Many-to-Many relationships with payload fields (Students apply to many Jobs via an applications table).
+• Database Constraints: Go beyond basic column types. Learn how to use Unique Constraints (preventing a duplicate combination of student_id + job_id) and Foreign Key Cascades (what happens to applications if a job is deleted?).
+• Schema Migrations (Alembic): Master tracking database changes incrementally. You must learn how to initialize Alembic, generate migration scripts (alembic revision --autogenerate), and upgrade/downgrade live database states.
+
+2. Identity Security & Role-Based Access Control (RBAC)
+
+Security is the absolute core of this project. A student must never be allowed to call an endpoint meant for a recruiter or admin.
+• Hashing and Tokenization: Learn how to use libraries like passlib (with bcrypt) to securely hash passwords before they touch the database. Master creating and decoding JSON Web Tokens (JWT) using pyjwt or jose.
+• FastAPI Dependency Injection (Depends): Learn how FastAPI handles user extraction middleware. You need to know how to write reusable security functions that intercept requests, extract the JWT token from the authorization header, validate it, and return the current user object.
+• Role Verification: Learn how to create dynamic role checks using FastAPI dependencies (e.g., creating a dependency function RoleChecker(["admin", "recruiter"]) that raises a 403 Forbidden error if a regular student tries to access it).
+
+3. Clean Architecture & Testing (Separation of Concerns)
+
+This project explicitly demands putting business logic in a services/ layer, keeping your endpoints clean and lightweight.
+• Separation of Concerns: Understand why routes (routers/) should only handle HTTP requests and inputs, while business rules (checking if a student's CGPA is ≥ the job's minimum requirement) live in decoupled service modules (services/eligibility.py).
+• Automated Unit Testing (pytest): Learn how to set up an isolated, temporary testing database in PostgreSQL so your tests don't pollute your real development data.
+• Edge-Case Assertion: Learn how to use pytest and httpx.AsyncClient to simulate malicious or invalid user behaviors (e.g., explicitly testing that an endpoint throws a 400 Bad Request if a student tries to apply to an expired job drive).
+
+4. Infrastructure & Automation (Docker & CI/CD)
+
+To prove production readiness, the portal must be completely portable and test itself automatically.
+• Docker Multi-Container Systems: Learn how to write a custom Dockerfile using multi-stage builds to minimize image sizes for your FastAPI code.
+• Docker Compose Multi-Container Orchestration: Master orchestrating an entire system in a compose.yaml file. Learn how to link your FastAPI application service to an isolated PostgreSQL container instance using networking aliases and persistent storage volumes.
+• GitHub Actions Workflows: Learn how to write .yml configuration files that automatically stand up a clean Linux machine on GitHub, download your code, run your test suite on every single git push, and reject the build if a test fails.
+
 • How does role based access control work in your code?
 • How do you prevent a student from applying twice? Database constraint or code check, and why?
 • Why did you use Docker? What problem does it solve?
