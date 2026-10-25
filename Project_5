@@ -82,6 +82,33 @@ Questions this project prepares you for
 • What would it cost to run this for 1,000 users a day, and how would you reduce that cost?
 
 
+Requirements details
+
+
+ Core Backend Engineering, The Data & Vector Pipeline, and AI System Design & Guardrails.
+
+1. Core Backend Engineering (FastAPI & Databases)
+
+You are building a production-style API, not just a simple script. You need to master how data flows from a user to a server.
+• FastAPI & Asynchronous Python: Learn how to create API endpoints (@app.post("/upload")), handle async/await syntax, and manage file uploads (UploadFile).
+• Relational Database Design (PostgreSQL): Learn how to design tables with foreign keys to link Users ➡️ Documents ➡️ Chat Histories.
+• Object-Relational Mapping (ORM): Learn how to use SQLAlchemy or SQLModel to communicate between your Python code and PostgreSQL without writing raw SQL.
+
+2. The Data & Vector Pipeline (The Core of RAG)
+
+This is where 90% of RAG bugs happen. You must understand how text behaves when it is chopped up and converted to math.
+• Text Extraction & Metadata Management: Learn how pypdf extracts text stream-by-stream. Crucially, learn how to keep track of structural metadata (like appending {"page_number": 4, "source": "biology_notes.pdf"}) to every chunk of text.
+• Chunking Strategies: Learn the trade-offs between Fixed-size chunking (splitting strictly by 500 characters) and Recursive Character Chunking (splitting by paragraphs, then sentences, to keep ideas together). Learn what "chunk overlap" is and why it prevents losing context at the edges of a split.
+• Vector Database Operations: Learn how to initialize a local database (ChromaDB or FAISS), generate a collection, upsert (insert/update) vectors with their text payloads, and execute a Query Search to pull the top K matching results.
+
+3. AI System Design, APIs & Guardrails
+
+Interfacing with an LLM requires rigorous control to prevent hallucinations and high cloud bills.
+• API Client Handling & Environment Variables: Learn how to securely store API keys using .env files and python-dotenv. Master the official Python SDKs for Google Gemini or Groq to handle network timeouts and retries.
+• Strict Prompt Engineering & System Instructions: Learn how to write system prompts that explicitly lock the LLM into a box. You must learn how to instruct it: "You are an assistant who can ONLY answer using the provided context. If the context does not contain the answer, reply exactly with: 'I cannot find the answer in the documents.' Do not use outside knowledge."
+• Context Window Management: Understand token limits. If your vector search pulls back too many chunks, you will crash the LLM API or trigger massive token costs. Learn how to calculate token overhead before sending a payload.
+
+
 
 
 
