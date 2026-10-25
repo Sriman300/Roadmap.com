@@ -74,5 +74,33 @@ Questions this project prepares you for
 • How does JWT authentication work, and where is the token stored?
 • Why should passwords be hashed and not encrypted?
 • What is the difference between PUT and PATCH?
-• How did you make sure one user cannot see another user's data?
+
+Requirement Details
+
+Project 1: Personal Expense Tracker API, you need to lay down a rock-solid foundation in pure software engineering fundamentals. This introductory project is designed to build complete confidence by teaching you how a modern server securely accepts, validates, saves, and returns clean data.
+Before writing your core route logic, you must develop a thorough understanding of architecture decoupling, data protection standards, and database structures.
+
+1. RESTful API Architecture & Design Principles
+
+This project introduces you to industry-standard API patterns. You must understand how an interface is structurally organized.
+• HTTP Method Mechanics: Master the exact semantic differences between actions: POST (create a new resource), GET (retrieve a resource), PUT (completely overwrite an existing resource), and PATCH (partially update specific fields).
+• HTTP Status Code Mapping: Learn how to use correct response signals to make your API readable (e.g., 201 Created for successfully logged expenses, 400 Bad Request for validation failures, 401 Unauthorized for missing tokens, and 404 Not Found).
+
+2. Data Validation & Type Safety (Pydantic)
+
+Servers should never trust raw input coming from the internet. You must ensure incoming data is clean before it hits your database code.
+• Pydantic Schemas: Learn how to create strict runtime validation classes that explicitly enforce parameters (e.g., ensuring amount is a strict positive float, date is a valid ISO format, and category belongs to a controlled enum list).
+• Decoupling Data Shapes: Understand why you need separate schemas for different states: one for data entering the application (ExpenseCreate), one for data updating it (ExpenseUpdate), and one for the database response format (ExpenseResponse).
+
+3. Basic Relational Modeling (SQLAlchemy ORM)
+
+You will be translating tabular database designs directly into clean Python code using an Object-Relational Mapper (ORM).
+• One-to-Many Relationships: Master linking tables conceptually via foreign keys. You must know how an expenses table row explicitly references a unique primary key from the users table.
+• Aggregations & Grouping: Learn how to write basic data queries utilizing functions like SUM() combined with GROUP BY execution blocks. This is mandatory for building the tracking endpoint that calculates your monthly spending by category.
+
+4. Basic Hashing & Core Auth Flow
+
+Even a entry-level project requires production-grade security handling to keep user information safe.
+• Irreversible Cryptographic Hashing: Understand why user passwords must be processed through hashing algorithms like bcrypt before storage, rather than simple two-way encryption strings.
+• Stateless JWT Verification: Learn how a server issues a signed Json Web Token (JWT) on login, how the frontend passes it back inside the HTTP Authorization header, and how your code extracts user IDs safely from that payload.
 
